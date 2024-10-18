@@ -17,7 +17,6 @@ public class MySQLiteConnection {
         System.out.print("Введіть URL підключення: ");
         url = scanner.nextLine();
         try {
-            // Підключення до бази даних або створення нової, якщо вона не існує
             connection = DriverManager.getConnection(url);
             System.out.println("Підключено до бази даних: " + url);
         } catch (SQLException e) {
